@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'space grotesk';
+    justify-content: space-evenly;
+}
+
+.background{
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: repeat-y; 
+    position: absolute;
+    width: 25%;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* codigos usados para organizar as fotos dos cartões */
+.cartoes{
+    width: 35rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.card-front{
+    margin-bottom: 30px;
+    position: relative;
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    color: #fff;
+}
+.card-logo{
+    width: 100px;
+    height: 60px;
+    background-image: url(./images/card-logo.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.card-number{
+    font-size: 35px;
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    text-transform: uppercase;
+    margin: 20px 0 ;
+}
+.card-front img{
+    width: 24rem;
+    z-index: -1;
+}
+.card-back{
+    align-self: flex-end;
+    margin-bottom: 30px;
+    position: relative;
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.card-back .cvc-card{
+margin-right: 55px;
+color: #fff;
+transform: translateY(-3px);
+}
+
+/*codigos para o formulario*/
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    height: auto;
+    position: relative;
+}
+.formulario label{
+    margin-top: 15px;
+}
+.formulario input{
+    width: 30rem;
+    height: 45px;
+    border-radius: 8px;
+    border-width: 1px;
+}
+#YY,#MM{
+    width: 80px;
+}
+#cvc{
+    width: 140px;
+}
+.span-cvc{
+    bottom: 19px;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+.submit{
+    height: 40px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.submit:hover{
+    cursor: pointer;
+}
+
+.tirar-setas::-webkit-outer-spin-button,
+.tirar-setas::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.check{
+    border-color: #20f508;
+}
+.fail{
+    border-color: #ff0000;
+}
+.erros{
+    color: #ff0000;
+    font-size: 12px;
+}
+.sumir{
+    display: none;
+}
+/* ---atribuição--- */
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
